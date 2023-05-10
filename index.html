@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://kit.fontawesome.com/c5ccf2090d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -15,10 +14,10 @@
         <form action="Register" id="Register">
             <p>Cadastre-se</p>
             <div class="field">
-                <input type="text" placeholder="Digite seu nome...">
+                <input type="text" placeholder="Digite seu nome..." required>
             </div>
             <div class="field">
-                <input type="email" placeholder="Digite seu e-mail...">
+                <input type="email" placeholder="Digite seu e-mail..." required>
             </div>
             <div class="field">
                 <input type="date" placeholder="Data de nascimento...">
@@ -39,16 +38,88 @@
                 </div>
 
                 <nav class="menu">
-                    <button type="button" class="open-menu"><i class="fa-solid fa-bars"></i></button>
+                    <button type="button" class="open-menu"><i class="fa-solid fa-bars">
+                            <i class="fas fa-bars"></i></button>
                     <div class="backdrop"></div>
-                    <ul></ul>
+                    <ul>
+                        <li class="close=menu"><button type="button">
+                                <i class="fas fa-xmark"></li></button></li>
+                        <li><a href="#logo">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </nav>
-
-
-
             </div>
         </div>
     </header>
+
+    <section class="home">
+
+        <main class="container">
+            <div class="title">
+                <h1>Home Page</h1>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad esse eos ducimus at dolorum, vel, unde
+                tempora facere est amet sapiente ipsa assumenda placeat veniam. Autem exercitationem perspiciatis
+                dignissimos veniam.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quibusdam excepturi, aperiam
+                reprehenderit vel illum nulla iusto, animi blanditiis optio, sequi aut qui autem harum! Repudiandae
+                voluptatem aut fugit veniam.</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, quibusdam eum? Alias, eligendi fuga?
+                Excepturi laborum dolorum temporibus nisi quisquam mollitia aut, porro esse nobis asperiores, quis earum
+                exercitationem debitis!</p>
+
+            <div class="about">
+                <h2 class="sobre">Sobre a Empresa</h2>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi voluptatibus tempore, recusandae
+                    laborum blanditiis, vitae consectetur voluptatem repellendus ab sequi provident fuga et. Maiores
+                    aliquam, minus harum in amet asperiores?</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, corporis ipsam omnis, doloremque hic
+                    molestiae perferendis ea, vel eius veniam mollitia. Totam sunt perferendis recusandae et beatae
+                    harum molestiae veniam.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, fugit beatae repellat quia possimus,
+                    voluptate repudiandae sed aperiam alias, quo qui. Consequuntur earum tenetur repellat similique
+                    magnam quos natus! Amet!</p>
+
+            </div>
+
+            <section class="contact-container">
+                <h2 class="contact">Entre em contato</h2>
+                <p>Mande uma mensagem com sua opinião sobre nossos serviços</p>
+                <form action="form-container">
+                    <div class="inputs"><input type="text" name="name" placeholder="Seu nome">
+                        <input type="email" name="email" placeholder="Seu e-mail">
+                    </div>
+                    <div> <textarea name="message" placeholder="Digite sua mensagem"></textarea></div>
+                    <div><input type="submit" value="Enviar"></div>
+                </form>
+
+            </section>
+
+        </main>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Curso de Criação de páginas WEB com Marketing Digital</p>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="#logo"></a></li>
+                    <li><a href="#about"></a></li>
+                    <li><a href="#contact"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
 </body>
 
 </html>
